@@ -2,3 +2,13 @@ single-node/config/wazuh_indexer_ssl_certs/*.pem
 single-node/config/wazuh_indexer_ssl_certs/*.key
 multi-node/config/wazuh_indexer_ssl_certs/*.pem
 multi-node/config/wazuh_indexer_ssl_certs/*.key
+# Ignore generated SSL certificates and sensitive keys
+**/wazuh_indexer_ssl_certs/
+**/certs/
+**/config/wazuh_indexer_ssl_certs/
+**/.env
+**/logs/
+**/data/
+**/*.pem
+**/*.key
+**/*.crt
